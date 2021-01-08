@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans',sans-serif;
+	background-color: black;
+}
+#container{
+	width: 1000px;
+	height: 550px;
+	background:radial-gradient(farthest-corner at 40px 40px,
+    #f35 0%, #43e 100%);
+    margin: 20px auto;	
+    display: flex;
+}
+#calculator{
+	width: 320px;
+	height: 520px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* display: flex; */
+}
+#result{
+	height: 120px;
+}
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color: #919191;
+}
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+#keyboard{
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    /* flex-basis: 20%; */
+}
+.operator,.number,.empty{
+    width: 50px;
+   
+    border-radius: 50%;
+    border-width: 0;
+    height: 50px;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.operator:hover,.number:hover{
+    background-color: violet;
+    cursor: pointer;
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: #20b2aa;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-color: #ffa500;
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-color: #f08080;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: #7d93e0;
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: #9477af;
+}
+@media(max-width:991px){
+    #container{
+        max-width: 750px; 
+      position: relative;
+    margin: auto;
+}
+#calculator{
+    max-width: 500px;
+    margin: auto;
+  margin-top: 5px;
+}
+}
+@media(max-width:700px)
+    {
+        #container{
+            position: relative;
+           max-width: 400px;
+           margin-top: 0px;
+            /* margin: auto; */
+            
+        }
+        #calculator{
+            max-width: 350px;
+            margin: auto;
+            margin-top: 5px;
+        }
+    }
